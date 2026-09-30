@@ -42,3 +42,20 @@ Os dados estão armazenados no diretório `data/raw/` e compreendem atributos so
 ├── notebooks/          <- Notebooks Jupyter (.ipynb) contendo análises e modelos
 ├── README.md           <- Apresentação e instruções do projeto
 └── requirements.txt    <- Dependências e bibliotecas Python
+
+---
+
+## 🔬 Metodologia Analítica (Etapa A2)
+
+### 1. Linguagem e Bibliotecas
+* **Linguagem:** Python 3.10+
+* **Principais Pacotes:** `pandas`, `numpy` (Manipulação); `matplotlib`, `seaborn` (EDA); `scikit-learn` (Modelagem e Métricas).
+
+### 2. Pipeline de Pré-processamento e Modelagem
+* **Tratamento de Dados:** Imputação de nulos via mediana, escalonamento via `StandardScaler` e codificação de variáveis categóricas.
+* **Modelos Escolhidos:**
+  * **Baseline:** Regressão Logística (Alta interpretabilidade e auditoria financeira).
+  * **Avançado:** Random Forest Classifier (Captura de não-linearidades e interações).
+* **Métricas de Sucesso:**
+  * **Acurácia Global:** $> 85\%$
+  * **Recall (Inadimplentes):** $\ge 80\%$ (Foco em minimizar Falsos Negativos/prejuízo financeiro).
